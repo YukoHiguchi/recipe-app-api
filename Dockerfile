@@ -1,4 +1,5 @@
 FROM python:3.7-alpine
+MAINTAINER Yuko Higuchi
 
 ENV PYTHONUNBUFFERED 1
 
@@ -11,4 +12,3 @@ COPY ./app /app
 
 RUN adduser -D user
 USER user
-
